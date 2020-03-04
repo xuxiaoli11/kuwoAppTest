@@ -1,6 +1,7 @@
 import yaml
 import logging.config
 from appium import webdriver
+from time import sleep
 
 CON_LOG = 'E:\studyxxl\Appium+Python\kuwoAppTest\log.conf'
 logging.config.fileConfig(CON_LOG)
@@ -22,7 +23,8 @@ def appium_desired():
     logging.info('start app...')
     driver = webdriver.Remote('http://' + str(data['ip']) + ':' + str(data['port']) + '/wd/hub', desired_caps)
 
-    driver.implicitly_wait(10)
+    # driver.implicitly_wait(10)
+    sleep(5)
     return driver
 
 

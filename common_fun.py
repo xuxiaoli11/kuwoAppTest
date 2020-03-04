@@ -7,7 +7,7 @@ from time import sleep
 
 
 class Common(BaseView):
-    driver = appium_desired()
+    # driver = appium_desired()
 
     def swipeLr(self, xs, xe, y):
         logging.info('========swipe lr========')
