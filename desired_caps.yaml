@@ -1,0 +1,8 @@
+platformName: Android
+platformVersion: 5.1.1
+deviceName: 127.0.0.1:62001
+appPackage: cn.kuwo.player
+appActivity: cn.kuwo.player.activities.MainActivity
+noRest: true
+ip: 127.0.0.1
+port: 4723
